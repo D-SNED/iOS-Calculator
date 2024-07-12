@@ -1,3 +1,45 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  width: 400px;
+  background-color: black;
+}
+
+.result {
+  background-color: black;
+  color: white;
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  padding: 20px 5px;
+}
+
+.button {
+  background-color: #d8d9db;
+  color: black;
+  height: 100px;
+  width: 24.2%;
+  border: none;
+  border-radius: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ebebeb;
+}
+
+.double {
+  width: 49.4%;
+}
+
+.triple {
+  width: 74.5%;
+}
