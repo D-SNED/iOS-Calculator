@@ -54,6 +54,7 @@ function handleSymbol(symbol) {
     switch (symbol) {
         case 'C':
             buffer = '0';
+            runningTotal = 0;
             break;
         case '=':
             if (previousOperator === null){
@@ -69,8 +70,8 @@ function handleSymbol(symbol) {
                 buffer = '0';
             } else {
                 buffer = buffer.substring(0, buffer.length - 1);
-                console.log(buffer);
             }
+            break;
         case '+':
         case '-':
         case '×':
