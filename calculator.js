@@ -19,11 +19,30 @@ function handleNumber(number) {
 }
 
 function handleSymbol(symbol) {
+    switch (symbol) {
+        case 'C':
+            buffer = '0';
+            break;
+        case '=':
+            console.log('equals');
+            break;
+        case '←':
+            if (buffer.length === 1) {
+                buffer = '0';
+            } else {
+                buffer = buffer.substring(0, buffer.length - 1);
+            }
+        case '+':
+        case '-':
+        case '×':
+        case '÷':
+            console.log('math symbol');
+            break;
 
+    }
 }
 
 function init() {
-    console.log('hi');
     document.querySelector('.calc-buttons')
     .addEventListener("click", function(event) {
         buttonClick(event.target.innerText);
